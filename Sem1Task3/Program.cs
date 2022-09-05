@@ -49,7 +49,7 @@ if (inputLine != null)
     //=======================================================
     // # 3 Option
     //=======================================================
-    outDayOfWeek = System.Globalization.CultureInfo.GetCultureInfo("ru-RU").DateTimeFormat.GetDayName((DayOfWeek)Enum.GetValues(typeof(DayOfWeek)).GetValue(inputDayOfWeek));
+    // string outDayOfWeek = System.Globalization.CultureInfo.GetCultureInfo("ru-RU").DateTimeFormat.GetDayName((DayOfWeek)Enum.GetValues(typeof(DayOfWeek)).GetValue(inputDayOfWeek));
 
-    Console.WriteLine(outDayOfWeek);
+    // Console.WriteLine(outDayOfWeek);
 }
