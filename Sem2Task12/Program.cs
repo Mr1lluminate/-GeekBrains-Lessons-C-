@@ -65,9 +65,9 @@ PrintData();
 void ReadData()
 {
     Console.WriteLine("Введите первое число: ");
-    string? inputLineA = Console.ReadLine();
+    string? inputLineA = Console.ReadLine() ?? "";
     Console.WriteLine("Введите второе число: ");
-    string? inputLineB = Console.ReadLine();
+    string? inputLineB = Console.ReadLine() ?? "";
 
     inputNumberA = int.Parse(inputLineA);
     inputNumberB = int.Parse(inputLineB);

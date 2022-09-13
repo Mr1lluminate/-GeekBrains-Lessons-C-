@@ -19,17 +19,42 @@
 
 // Use Dictionary
 //-------------------------------------------------------------------
-void weekend()
+// void weekend()
+// {
+//     Console.WriteLine("Введите число обозначающий день недели");
+//     string? inputLine = Console.ReadLine();
+//     int numberDay = int.Parse(inputLine);
+//     var weekDay = new Dictionary<int, string>()
+//     {
+//     {0, "Выходной день"},
+//     {1, "Будний день"},
+//     };
+//     Console.WriteLine((numberDay == 6 || numberDay == 7) ? (weekDay[0]) : (weekDay[1]));
+// }
+
+//weekend();
+
+//-------------------------------------------------------------------
+// Educator Option
+
+// Метод использующий коллекцию
+void Option2()
 {
-    Console.WriteLine("Введите число обозначающий день недели");
-    string? inputLine = Console.ReadLine();
-    int numberDay = int.Parse(inputLine);
-    var weekDay = new Dictionary<int, string>()
+    string? inputLineA = Console.ReadLine() ?? "";
+    int inputNumberA = int.Parse(inputLineA);
+    // Создаём коллекцию и заполняем её
+    Dictionary<int, string> dayOfWeek = new Dictionary<int, string>()
     {
-    {0, "Выходной день"},
-    {1, "Будний день"},
+    {1,"Будний день"},
+    {2,"Будний день"},
+    {3,"Будний день"},
+    {4,"Будний день"},
+    {5,"Будний день"},
+    {6,"Выходной день"},
+    {7,"Выходной день"}
     };
-    Console.WriteLine((numberDay == 6 || numberDay == 7) ? (weekDay[0]) : (weekDay[1]));
+    // Проверяем наличие ключа в коллекции и печатаем результат
+    Console.WriteLine(dayOfWeek.ContainsKey(inputNumberA) ? ("Variant2: " + dayOfWeek[inputNumberA]) : ("Variant2: Введите правильное число!"));
 }
 
-weekend();
+Option2();
