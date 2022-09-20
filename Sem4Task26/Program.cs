@@ -39,10 +39,10 @@ int DigitCount(int num)
     int sum = 0;
     while (num > 0)
     {
-        sum += 1;
+        sum += num % 10;
         num = num / 10;
     }
-    return num;
+    return sum;
 }
 
 int number = ReadData("Введите число: ");
